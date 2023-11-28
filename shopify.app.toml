@@ -1,0 +1,28 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+name = "saas-popup-app"
+client_id = "05620261315dab0a63ae97ed212c9db5"
+application_url = "https://sitemap-refined-transmitted-backgrounds.trycloudflare.com"
+embedded = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://sitemap-refined-transmitted-backgrounds.trycloudflare.com/auth/callback",
+  "https://sitemap-refined-transmitted-backgrounds.trycloudflare.com/auth/shopify/callback",
+  "https://sitemap-refined-transmitted-backgrounds.trycloudflare.com/api/auth/callback",
+  "https://sitemap-refined-transmitted-backgrounds.trycloudflare.com/.shopify/graphiql/auth/callback"
+]
+
+[webhooks]
+api_version = "2023-10"
+
+[pos]
+embedded = false
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "beehexa.myshopify.com"
